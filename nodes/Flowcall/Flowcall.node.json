@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-flowcall.flowcall",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.flowcall.co/developers"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/flowcall/n8n-nodes-flowcall#readme"
+			}
+		]
+	}
+}

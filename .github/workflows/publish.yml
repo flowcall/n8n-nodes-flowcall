@@ -1,0 +1,37 @@
+# Publishes the package to npm with provenance when a GitHub release is published.
+# n8n requires community nodes submitted for verification to be published this way.
+# npm side: on npmjs.com, the package's Settings → Trusted Publisher must name
+# GitHub Actions, the repository flowcall/n8n-nodes-flowcall and this workflow file
+# (publish.yml). No npm token is stored in this repository.
+name: Publish to npm
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      - name: Update npm (trusted publishing needs npm 11.5 or later)
+        run: npm install -g npm@latest
+
+      - run: npm install
+
+      - run: npm run lint
+
+      - run: npm run build
+
+      - run: npm publish --provenance --access public
