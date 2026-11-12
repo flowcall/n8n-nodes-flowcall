@@ -45,7 +45,7 @@ Each ticket is sent once. When you test the trigger in the editor, it returns th
 
 ## Compatibility
 
-Works with n8n 1.x (community nodes API version 1) and Flowcall's public API (`https://api.flowcall.co`). Flowcall's ticket creation API allows 10 requests a minute, 200 an hour and 1,000 a day.
+Built for n8n 1.x (community nodes API version 1) and Flowcall's public API (`https://api.flowcall.co`). Flowcall's ticket creation API allows 10 requests a minute, 200 an hour and 1,000 a day.
 
 ## Resources
 
