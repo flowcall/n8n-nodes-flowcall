@@ -55,4 +55,5 @@ Built for n8n 1.x (community nodes API version 1) and Flowcall's public API (`ht
 
 ## Version history
 
+- **0.1.1**: Published from GitHub Actions with npm provenance. No changes to the nodes.
 - **0.1.0**: Ticket Create and Get Many; Flowcall Trigger for new and resolved tickets.

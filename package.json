@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-flowcall",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community node for Flowcall, the omnichannel AI customer service platform: create and list support tickets, and start workflows when tickets are created or resolved.",
 	"license": "MIT",
 	"homepage": "https://www.flowcall.co/",
